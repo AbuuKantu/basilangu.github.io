@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Basilangu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>    
+      
+       <nav class="navbar navbar-style">
+          <div class="container">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+ 
+     <span class="icon-bar"></span>      
+     <span class="icon-bar"></span>    
+     <span class="icon-bar"></span>    
+</button>
+<a href="index.html"><img class="logo" src="images/logo.png"></a>
+
+</div>
+<div class="collapse navbar-collapse" id="micon"> 
+     <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a> </li>
+        <li><a href="">ABOUT US</a> </li>
+        <li><a href="">CONTACT US</a> </li>
+        <li><a href="booking1.html">BOOK NOW</a> </li>
+     </ul>
+
+</div>
+</div>
+       </nav>
+      <div class="container-fluid backgroundimg">
+            <div class="col-md-5 col-md-offset-1">
+                <div class="left-side">
+    <section id="first-tab-group" class="tabgroup">
+        <div id="tab1">
+            <div class="submit-form">
+                <h4>CHOOSE YOUR<em> ROUTE</em>:</h4>
+                <form id="form-submit" action="" method="get">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <fieldset>
+                                <label for="from">From:</label>
+                                <select required name='from'>
+                                    <option value="">Select a location...</option>
+                                    <option value="MWANZA"> MWANZA</option>
+                                    <option value="DAR ES SALAAM">DAR ES SALAAM</option>
+                                    <option value="DODOMA">DODOMA</option>
+                                    <option value="KAHAMA">KAHAMA</option>
+                                    <option value="NAIROBI">NAIROBI</option>
+                                    <option value="MOROGORO">MOROGORO  </option>
+                                    <option value="SINGIDA">SINGIDA  </option>
+                                    <option value="ARUSHA">ARUSHA </option>
+                                    <option value="BUKOBA">BUKOBA</option>
+                                    <option value="MBEYA"> MBEYA</option>
+                                </select>
+                            </fieldset>
+                        </div>
+
+                        <div class="col-md-6">
+                            <fieldset>
+                                <label for="to">To:</label>
+                                <select required name='to'>
+                                    <option value="">Select a location...</option>
+                                    <option value="MWANZA"> MWANZA</option>
+                                    <option value="DAR ES SALAAM">DAR ES SALAAM</option>
+                                    <option value="DODOMA">DODOMA</option>
+                                    <option value="KAHAMA">KAHAMA</option>
+                                    <option value="NAIROBI">NAIROBI</option>
+                                    <option value="MOROGORO">MOROGORO  </option>
+                                    <option value="SINGIDA">SINGIDA  </option>
+                                    <option value="ARUSHA">ARUSHA </option>
+                                    <option value="BUKOBA">BUKOBA</option>
+                                    <option value="MBEYA"> MBEYA</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset>
+                                <label for="departure">Departure date:</label>
+                                <input name="departure" type="date" class="form-control select-date">
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset>
+                                <label for="return">Return date:</label>
+                                <input name="return" type="date" class="form-control select-date"  >
+                            </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="radio-select">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <label for="round">Oneway</label>
+                                        <input type="radio" name="trip" id="round" value="round" required="required">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <label for="oneway">Return</label>
+                                        <input type="radio" name="trip" id="oneway" value="one-way" required="required">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <fieldset>
+                                <button type="submit" id="form-submit" class="btn"><a href="booking1.html">Book Now</a></button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+</div> 
+                   <div class="row">
+                    <div class="col-md-5 col-md-offset-1 col-md-6"> 
+                   <div class="login-form">
+                    <form action="" method="post">
+                        <h2 class="text-center">For Staffs:</h2>       
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Username" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" required="required">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                        </div>
+                        <div class="clearfix">
+                            <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
+                            <a href="#" class="float-right">Forgot Password?</a>
+                        </div>        
+                    </form>
+                </div>
+                </div>
+              </div>
+             
+           </div>
+            <div class="container-fluid">
+            <div class="row routes">
+              <div class="col-sm-12"> 
+               <h4 style="text-align: center">OUR <span style="color:yellow">ROUTES:</span></h4>
+            <marquee behavior="scroll" direction="left" scrollamount="10">DAR-MORO</marquee>
+            
+<marquee behavior="scroll" direction="right" scrollamount="12">MWANZA-DAR</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="20">DODOMA-MWANZA</marquee>
+
+<marquee behavior="scroll" direction="right" scrollamount="15">MBEYA-DAR </marquee>
+<marquee behavior="scroll" direction="left" scrollamount="20">NAIROBI-DAR </marquee>
+<marquee behavior="scroll" direction="right" scrollamount="16">BUKOBA-DAR </marquee>
+<marquee behavior="scroll" direction="left" scrollamount="17">SINGIDA-MWANZA</marquee>
+</div>
+</div>
+</div>
+ 
+<footer class="page-footer">
+    <div class="col-sm-12">
+        <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+           
+        </ul>
+    </div>
+  <div class="footer-copyright text-center py-3"> 
+    <p>Copyright © 2020, Basi Co.Ltd. All Rights Reserved.</p>
+</div>
+</footer> 
+ 
+  </body>
+</html>

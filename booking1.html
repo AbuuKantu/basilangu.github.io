@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Basilangu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+</head>
+  <body>
+   
+       <nav class="navbar navbar-style">
+           <div class="container">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+ 
+     <span class="icon-bar"></span>      
+     <span class="icon-bar"></span>    
+     <span class="icon-bar"></span>    
+</button>
+<a href="index.html"><img class="logo" src="images/logo.png"></a>
+
+</div>
+<div class="collapse navbar-collapse" id="micon"> 
+     <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a> </li>
+        <li><a href="">ABOUT US</a> </li>
+        <li><a href="">CONTACT US</a> </li>
+        <li><a href="booking1.html">BOOK NOW</a> </li>
+     </ul>
+</div>
+</div>
+       </nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+             <div class="radio-btn">
+              <input type="radio" class="btn1" name="check" id="text1" checked="checked"><span>One Way</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <input type="radio" class="btn1" name="check" id="text1"><span>Return</span>
+            </div>
+          </div>
+            <div class="panel-body">
+          <form name="info"> 
+              <label>From</label>
+              <input type="text" class="form-control" placeholder="city" name="from" id="text3" required>
+              <label>To</label>
+              <input type="text" class="form-control" placeholder="city" name="to" id="text4" required>
+              <div class="input-grp">
+                <label>Date</label>
+                 <input type="date" class="form-control select-date" name="Date" id="text5" required>
+              </div>
+              <label>Seat</label>
+              <input type="text" class="form-control" name="Seat" id="text6" required>
+              <label>Name</label>
+              <input type="text" class="form-control" name="Name" id="text7" required>
+              <label>Contacts</label>
+              <input type="tel" class="form-control" name="contacts" id="text8" required>
+              <button type="submit" class="btn btn-info pull-right" onclick="book()" value="book">BOOK NOW</button>
+            </form>
+            </div>
+                   
+          </div>
+        </div>
+        <div class="col-sm-6"> 
+          <h1 style="font-weight:bold; text-align: center;">Seat Plan</h4>
+          <div class="seat-choice">
+      
+          <h4 style="font-weight:bold";>Click to select your Seat</h4>
+          <input type="button" value="A1" id="A1"  onclick=" info.text6.value+='A1'; document.getElementById('A1').style.background='yellow';">
+          <input type="button" value="B1"  id="B1" onclick=" info.text6.value+='B1'; document.getElementById('B1').style.background='yellow';"> 
+          <input type="button" value="C1"  id="C1" onclick=" info.text6.value+='C1'; document.getElementById('C1').style.background='yellow';">
+          <input type="button" value="D1"  id="D1" onclick=" info.text6.value+='D1'; document.getElementById('D1').style.background='yellow';"> 
+          <input type="button" value="E1"  id="E1" onclick=" info.text6.value+='E1'; document.getElementById('E1').style.background='yellow';">
+          <input type="button" value="F1"  id="F1" onclick=" info.text6.value+='F1'; document.getElementById('F1').style.background='yellow';"> 
+          <input type="button" value="G1"  id="G1" onclick=" info.text6.value+='G1'; document.getElementById('G1').style.background='yellow';">
+          <input type="button" value="H1"  id="H1" onclick=" info.text6.value+='H1'; document.getElementById('H1').style.background='yellow';">  
+          <input type="button" value="I1"  id="I1" onclick=" info.text6.value+='I1'; document.getElementById('I1').style.background='yellow';">
+          <input type="button" value="J1"  id="J1" onclick=" info.text6.value+='J1'; document.getElementById('J1').style.background='yellow';"><br>
+          <input type="button" value="A2"  id="A2" onclick=" info.text6.value+='A2'; document.getElementById('A2').style.background='yellow';">
+          <input type="button" value="B2"  id="B2" onclick=" info.text6.value+='B2'; document.getElementById('B2').style.background='yellow';">  
+          <input type="button" value="C2"  id="C2" onclick=" info.text6.value+='C2'; document.getElementById('C2').style.background='yellow';"> 
+          <input type="button" value="D2"  id="D2" onclick=" info.text6.value+='D2'; document.getElementById('D2').style.background='yellow';"> 
+          <input type="button" value="E2"  id="E2" onclick=" info.text6.value+='E2'; document.getElementById('E2').style.background='yellow';"> 
+          <input type="button" value="F2"  id="F2" onclick=" info.text6.value+='F2'; document.getElementById('F2').style.background='yellow';"> 
+          <input type="button" value="G2"  id="G2" onclick=" info.text6.value+='G2'; document.getElementById('G2').style.background='yellow';"> 
+          <input type="button" value="H2"  id="H2" onclick=" info.text6.value+='H2'; document.getElementById('H2').style.background='yellow';"> 
+          <input type="button" value="I2"  id="I2" onclick=" info.text6.value+='I2'; document.getElementById('I2').style.background='yellow';"> 
+          <input type="button" value="J2"  id="J2" onclick=" info.text6.value+='J2'; document.getElementById('J2').style.background='yellow';"> 
+          
+          <br><br><br>
+          <input type="button" value="A3"  id="A3" onclick=" info.text6.value+='A3'; document.getElementById('A3').style.background='yellow';">
+          <input type="button" value="B3"  id="B3" onclick=" info.text6.value+='B3'; document.getElementById('B3').style.background='yellow';"> 
+          <input type="button" value="C3"  id="C3" onclick=" info.text6.value+='C3'; document.getElementById('C3').style.background='yellow';">
+          <input type="button" value="D3"  id="D3" onclick=" info.text6.value+='D3'; document.getElementById('D3').style.background='yellow';"> 
+          <input type="button" value="E3"  id="E3" onclick=" info.text6.value+='E3'; document.getElementById('E3').style.background='yellow';">
+          <input type="button" value="F3"  id="F3" onclick=" info.text6.value+='F3'; document.getElementById('F3').style.background='yellow';"> 
+          <input type="button" value="G3"  id="G3" onclick=" info.text6.value+='G3'; document.getElementById('G3').style.background='yellow';">
+          <input type="button" value="H3"  id="H3" onclick=" info.text6.value+='H3'; document.getElementById('H3').style.background='yellow';"> 
+          <input type="button" value="I3"  id="I3" onclick=" info.text6.value+='I3'; document.getElementById('I3').style.background='yellow';">
+          <input type="button" value="J3"  id="J3" onclick=" info.text6.value+='J3'; document.getElementById('J3').style.background='yellow';"><br>
+          <input type="button" value="A4"  id="A4" onclick=" info.text6.value+='A4'; document.getElementById('A4').style.background='yellow';">
+          <input type="button" value="B4"  id="B4" onclick=" info.text6.value+='B4'; document.getElementById('B4').style.background='yellow';"> 
+          <input type="button" value="C4"  id="C4" onclick=" info.text6.value+='C4'; document.getElementById('C4').style.background='yellow';">
+          <input type="button" value="D4"  id="D4" onclick=" info.text6.value+='D4'; document.getElementById('D4').style.background='yellow';"> 
+          <input type="button" value="E4"  id="E4" onclick=" info.text6.value+='E4'; document.getElementById('E4').style.background='yellow';">
+          <input type="button" value="F4"  id="F4" onclick=" info.text6.value+='F4'; document.getElementById('F4').style.background='yellow';"> 
+          <input type="button" value="G4"  id="G4" onclick=" info.text6.value+='G4'; document.getElementById('G4').style.background='yellow';">
+          <input type="button" value="H4"  id="H4" onclick=" info.text6.value+='H4'; document.getElementById('H4').style.background='yellow';"> 
+          <input type="button" value="I4"  id="I4" onclick=" info.text6.value+='I4'; document.getElementById('I4').style.background='yellow';">
+          <input type="button" value="J4"  id="J4" onclick=" info.text6.value+='J4'; document.getElementById('J4').style.background='yellow';">
+          </div>
+          </div>
+           <br><br>
+  <div class="col-sm-2">
+    <h4 style="font-weight:bold;">Seat Descprition</h4><br>
+
+  <button type="button" class="btn btn-info"></button>&emsp;&emsp;Available<br>   
+   <span class="space"><br></span>
+ <button type="button" class="btn btn-danger"></button>&emsp;&emsp;Booked<br> 
+ <span class="space"><br></span>
+ <button type="button" class="btn btn-warning"></button>&emsp;&emsp;Selected<br>      
+  </div><br>
+   </div>
+</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12"> 
+  <button type="button" class="btn pull-right" style="background-color:#86e6de;"><a href="booking2.html"  style="text-decoration:none; color:white">Next<span aria-hidden="true">&rarr;</span></a>
+ </button>
+</div>
+</div>
+</div>
+    <div class="container-fluid">
+      <div class="row routes">
+        <div class="col-sm-12"> 
+         <h4 style="text-align: center">OUR <span style="color:yellow">ROUTES:</span></h4>
+      <marquee behavior="scroll" direction="left" scrollamount="10">DAR-MORO</marquee>
+      
+<marquee behavior="scroll" direction="right" scrollamount="12">MWANZA-DAR</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="20">DODOMA-MWANZA</marquee>
+
+<marquee behavior="scroll" direction="right" scrollamount="15">MBEYA-DAR </marquee>
+<marquee behavior="scroll" direction="left" scrollamount="20">NAIROBI-DAR </marquee>
+<marquee behavior="scroll" direction="right" scrollamount="16">BUKOBA-DAR </marquee>
+<marquee behavior="scroll" direction="left" scrollamount="17">SINGIDA-MWANZA</marquee>
+</div>
+</div>
+</div>
+  <footer class="page-footer">
+    <div class="col-sm-12">
+        <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+           
+        </ul>
+    </div>
+  <div class="footer-copyright text-center py-3"> 
+    <p>Copyright © 2020, Basi Co.Ltd. All Rights Reserved.</p>
+</div>
+</footer>
+<script type="text/javascript">
+function book(){
+    
+    var info1 = document.getElementById('text1').value;
+    var  info2 = document.getElementById('text2').value;
+    var   info3 = document.getElementById('text3').value;
+    var   info4= document.getElementById('text4').value;
+    var   info5 = document.getElementById('text5').value;
+    var  info6  = document.getElementById('text6').value;
+    var  info7 = document.getElementById('text7').value;
+    var   info8  = document.getElementById('text8').value
+}
+</script>
+  </body>
+</html>
+           
+          
+          
+         
